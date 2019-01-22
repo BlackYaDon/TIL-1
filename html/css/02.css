@@ -1,0 +1,21 @@
+* {
+    color: red;
+}
+h1 {
+    color: blue;
+}
+.pink {
+    color: pink;
+}
+#yellow {
+    color: yellow;
+}
+h2 {
+    color: white;
+}
+.blue {
+    color: blue;
+}
+.bold {
+    font-weight: bold;
+}

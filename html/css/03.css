@@ -1,0 +1,51 @@
+body {
+    height: 10000px;
+}
+/* 그룹 선택자 */
+p, h1, h2, h3 {
+    color: gray;
+}
+.black_bg, .white {
+    color: white;
+    background-color: #214124;
+}
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.blue {
+    background-color: rgb(0, 0, 255);
+}
+/* 인접 선택자 (형제관계) */
+.red + .blue + div {
+    background-color: purple;
+}
+
+/* h1 밑에 있는 형제 */
+h1 ~ p {
+    color: blueviolet;
+}
+
+/* h1에 바로 붙어 있는 형제 */
+h1 + p {
+    color: red;
+}
+ol > li {
+    color: darkgreen;
+}
+/* div.blue.white.pink */
+/* <div class="blue white pink"> */
+ol#chocolate li:nth-of-type(2) {
+    color: chocolate;
+}
+
+ul li:nth-of-type(2) {
+    color: lime;
+}
+
+/* :nth-of-type(2) 형제 중에 2번째*/
+/* :nth-child(2) 자식 중에 2번째 */
